@@ -88,29 +88,85 @@ body{
 
 }
 
-@media screen and (max-width; 768px) {
+@media only screen and (max-width: 320px) {
+
+    html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    }
+
    .square-basic{
-    width: 90vmin;
-    top: auto;
-    margin: 20px auto;
+   height: 90%;
+   width: 90%;
+   top: 10%;
+   left: 50%;
+   transform: translateX(-50%);
+
+   margin: 0 auto;
+   max-width: 300px;
+   padding: 10px;
+   box-sizing: border-box;
+    
    }
 
+    .MSG{
+
+        min-height: auto;
+        min-width: auto;
+        text-align: center;
+        margin-top: 0;
+        font-size: 9vmin;
+        word-wrap: break-word;
+        
+
+    }
+
+    .MSG h1 {
+        font-size: inherit;
+        margin: 0;
+        padding: 0;
+    }
+
+    .image-gallery{
+        flex-direction: column;
+        align-items: center;
+        top: -150px;
+        margin-top: 20px;
+    }
+
    .image-container{
-    gap: 10px;
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    top: auto;
    }
 
    .OPbtn {
     top: auto;
     right: auto;
-    margin-top: 20px;
+    margin-top: 20px auto;
+   }
+
+   .CP {
+    position: relative;
+    top: -19%;
+    left: -40%;
+    width: 60%;
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: -50px auto 20px 20px;
+    
+
+
+    
    }
 }
 
-@media screen and (max-width: 480px) {
-    .image-container{
-        display: flex;
-    }
-}
+
 
 
 
