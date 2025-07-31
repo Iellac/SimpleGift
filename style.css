@@ -1,0 +1,192 @@
+
+
+
+body{
+    color: #f6ef8e;
+    background-color: #ffabdb;
+    background-image:
+    radial-gradient(at 9% 89%, #f8caf5 0px, transparent 50%),
+    radial-gradient(at 72% 6%, rgb(250, 232, 241) 0px, transparent 50%),
+    radial-gradient(at 24% 19%, rgb(235, 197, 242) 0px, transparent 50%),
+    radial-gradient(at 65% 6%, #f6ff8f 0px, transparent 50%),
+    radial-gradient(at 20% 98%, rgb(242, 105, 196) 0px, transparent 50%),
+    radial-gradient(at 44% 9%, rgb(242, 218, 0) 0px, transparent 50%),
+    radial-gradient(at 10% 9%, rgb(165, 14, 160) 0px, transparent 50%);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.square-basic {
+    width: 80vmin;
+    height: 45vmin;
+    max-width: 550px;
+    max-height: 300px;
+    background-color: rgb(255, 194, 255);
+    border: 2px solid rgb(0, 0, 0);
+    position: relative;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    box-shadow: 20px 20px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+}
+
+.MSG{
+    color: black;
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-top: 60px;
+    pointer-events: none;
+    text-align: center;
+}
+
+.image-gallery{
+    position: relative;
+    top: -2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+
+}
+
+
+.image-container{
+    width: 250px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    top: -300px;
+    bottom: 30px;
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.CP{
+    position: relative;
+    bottom: 25vmin;
+    left: 30vmin;
+    width: auto;
+    height: 100%;
+    z-index: 10;
+    object-fit: contain;
+    object-position: center;
+
+}
+
+@media screen and (max-width; 768px) {
+   .square-basic{
+    width: 90vmin;
+    top: auto;
+    margin: 20px auto;
+   }
+
+   .image-container{
+    gap: 10px;
+   }
+
+   .OPbtn {
+    top: auto;
+    right: auto;
+    margin-top: 20px;
+   }
+}
+
+@media screen and (max-width: 480px) {
+    .image-container{
+        display: flex;
+    }
+}
+
+
+
+button {
+    background-image: linear-gradient(to right, #f438eb, #fc00da);
+    border-radius: 100px;
+    border: 0;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-family: "Playwrite HU", cursive;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.OPbtn{
+    background-image: linear-gradient(to right, #663399, #8853bd);
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-family: "Playwrite HU", cursive;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    top: -200px;
+}
+
+button:active{
+    opacity: 0.8;
+}
+
+
+
+.modal{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 1.5s ease-in-out;
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open{
+    opacity: 1;
+    z-index: 999;
+    pointer-events: auto;
+}
+
+.modal-inner {
+    color: #000000;
+    background-color: hsl(54, 100%, 70%);
+    border-radius: 30px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
+    padding: 15px 25px;
+    text-align: center;
+    width: 380px;
+}
+
+.modal-inner h2 {
+     margin: 0;
+}
+
+.modal-inner p {
+    line-height: 24px;
+    margin: 10px 0;
+}
+
+
+
